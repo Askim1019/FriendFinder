@@ -1,25 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-     <!-- Compiled and minified CSS -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 
-     <!-- Compiled and minified JavaScript -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-    
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
 
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-     
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <title>Friend Finder</title>
 </head>
+
 <body>
-    <div>
-        <h1>Testing Survey</h1>
+    <div class='container'>
+        <div class='card-panel cyan lighten-1 col s12 center-align'>
+            <h4>Survey Questions</h4>
+            <p>Make sure to fill ALL the fields to find your baller friend</p>
+
+            <input id="name" type="text" class='center-align' required>
+            <label for="name">Name</label>
+
+            <input id="image" type="text" class='center-align' required>
+            <label for="image">Image URL</label>
+
+            <h5>
+                <strong>Question 1</strong>
+            </h5>
+            <p>I like competition and being around competitive people</p>
+
+            <select class="browser-default" id="q1" required>
+                <option value=""></option>
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+
+            <h5>
+                <strong>Question 2</strong>
+            </h5>
+            <p>I would rather travel than stay at home on my vacation time</p>
+
+            <select class="browser-default" id="q2" required>
+                <option value=""></option>
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+
+            <h5>
+                <strong>Question 3</strong>
+            </h5>
+            <p>I like to spend time with people that are energetic and extroverted</p>
+
+            <select class="browser-default" id="q3" required>
+                <option value=""></option>
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+
+            <h5>
+                <strong>Question 4</strong>
+            </h5>
+            <p>I am interested in the deep meaning of things</p>
+
+            <select class="browser-default" id="q4" required>
+                <option value=""></option>
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+
+            <h5>
+                <strong>Question 5</strong>
+            </h5>
+            <p>I enjoy playing sports and going to sporting events</p>
+
+            <select class="browser-default" id="q5" required>
+                <option value=""></option>
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+
+            <h5>
+                <strong>Question 6</strong>
+            </h5>
+            <p>I enjoy going to concerts</p>
+
+            <select class="browser-default" id="q6" required>
+                <option value=""></option>
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+
+            <h5>
+                <strong>Question 7</strong>
+            </h5>
+            <p>I enjoy going to art museums and anything related to the fine arts</p>
+
+            <select class="browser-default" id="q7" required>
+                <option value=""></option>
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+
+            <h5>
+                <strong>Question 8</strong>
+            </h5>
+            <p>I like to plan out hangouts instead of doing things on impulse</p>
+
+            <select class="browser-default" id="q8" required>
+                <option value=""></option>
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+
+            <h5>
+                <strong>Question 9</strong>
+            </h5>
+            <p>I like to message my friends often</p>
+
+            <select class="browser-default" id="q9" required>
+                <option value=""></option>
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+
+            <h5>
+                <strong>Question 10</strong>
+            </h5>
+            <p>I like to spend time in the outdoors</p>
+
+            <select class="browser-default" id="q10" required>
+                <option value=""></option>
+                <option value="1">1 (strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (strongly agree)</option>
+            </select>
+            <br>
+            <hr>
+            <br>
+            <button class="btn waves-effect waves-light modal-trigger" type="submit" id="modalBtn" data-target="modal1" name="action">Submit
+                <i class="material-icons right">send</i>
+            </button>
+
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <h4>Your new baller friend is...</h4>
+                    <h5 id="baller"></h5>
+                    <img id="ballerImage" alt="baller friend" height="250px" width="250px">
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#modalBtn").click(function (e) {
+                e.preventDefault();
+
+                const userInfo = {
+                    name: $("#name").val().trim(),
+                    photo: $("#image").val().trim(),
+                    scores: [
+                        $('#q1').val(),
+                        $('#q2').val(),
+                        $('#q3').val(),
+                        $('#q4').val(),
+                        $('#q5').val(),
+                        $('#q6').val(),
+                        $('#q7').val(),
+                        $('#q8').val(),
+                        $('#q9').val(),
+                        $('#q10').val()
+                    ]
+                };
+
+                console.log(userInfo);
+
+                $.post("api/friends", userInfo).then(function (data) {
+                    $("#baller").text(data.name);
+                    $("#ballerImage").attr("src", data.photo);
+                });
+            });
+
+            $(".modal").modal();
+
+            $('#name').val("");
+            $('#image').val("");
+            $('#q1').val("");
+            $('#q2').val("");
+            $('#q3').val("");
+            $('#q4').val("");
+            $('#q5').val("");
+            $('#q6').val("");
+            $('#q7').val("");
+            $('#q8').val("");
+            $('#q9').val("");
+            $('#q10').val("");
+        });
+    </script>
 </body>
+
 </html>
