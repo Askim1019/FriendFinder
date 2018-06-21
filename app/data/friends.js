@@ -12,12 +12,12 @@ ballersArray = [
     {
       "name": "Jeremy",
       "photo": "http://img.bleacherreport.net/img/images/photos/002/592/838/hi-res-186587861-jeremy-lin-of-the-houston-rockets-drive-the-ball_crop_exact.jpg?w=1200&h=1200&q=75",
-      "scores": [5, 3, 1, 5, 3, 4, 5, 4, 5, 2]
+      "scores": [5, 3, 1, 5, 3, 4, 5, 2, 5, 2]
     },
     {
       "name": "Lonzo",
       "photo": "https://www.sportsgossip.com/.image/t_share/MTU0NDc4MjgyNzM2MTQ5NTU0/la-sp-lakers-lonzo-ball-tattoos-20180325.jpg",
-      "scores": [3, 4, 2, 2, 4, 5, 3, 4, 2, 2]
+      "scores": [3, 4, 2, 2, 4, 5, 5, 4, 2, 2]
     },
     {
       "name": "Zach",

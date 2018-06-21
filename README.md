@@ -1,6 +1,9 @@
 # Friend Finder
 
-This app finds friends based off scores from a survey
+This app finds baller friends based off scores from a survey
+
+![alt text](/app/public/images/homepage.png)
+
 
 ## Getting Started
 
