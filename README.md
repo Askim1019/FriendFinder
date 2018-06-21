@@ -2,7 +2,7 @@
 
 This app finds baller friends based off scores from a survey
 
-![alt text](/app/public/images/homepage.png)
+![alt text](/app/public/images/homepage.png =250x250)
 
 
 ## Getting Started
