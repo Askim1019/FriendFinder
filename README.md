@@ -6,6 +6,9 @@ This app finds baller friends based off scores from a survey
 ![alt text](/app/public/images/surveypage.png)
 ![alt text](/app/public/images/ballerfriend.png)
 
+## App deployed in Heroku
+
+[ https://baller-friend-finder.herokuapp.com/]( https://baller-friend-finder.herokuapp.com/)
 
 ## Getting Started
 
