@@ -11,14 +11,12 @@ module.exports = (app) => {
     // Assign a variable receives the user's form results
     let newBaller = (req.body.scores).map((x) => parseInt(x));
     console.log(newBaller);
+
     // Get the sum of the array of scores from the user after it has been submitted
     let newBallerScore = newBaller.reduce((acc, current) => acc + current, 0);
     console.log(newBallerScore);
-    // Initialize a variable to retrieve the best match
-    let indexOfMatch;
-    // Initialize a current totalDifference variable
+
     let totalDifference;
-    //Initialize a variable to hold the lowest score which is our best match
     let lowestTotalDifference;
     let potentialBaller;
     let potentialBallerScore;
@@ -46,13 +44,13 @@ module.exports = (app) => {
     
     
     for (let i = 0; i < arrayOfTotalDifferences.length; i++) {
-      if (ballersArray[i] <= ballersArray[match]) {
+      if (arrayOfTotalDifferences[i] <= arrayOfTotalDifferences[match]) {
         match = i;
       }
     }
-
+    console.log(match);
     console.log("Your Best Baller Friend Match is: ", ballersArray[match]);
-    
+
     ballersArray.push(req.body);
     res.json(ballersArray[match]);
   });
